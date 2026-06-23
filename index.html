@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Generator Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+<h1>Password Generator 🔐</h1>
+<input id="password" readonly>
+<div>
+<label>Length: <span id="lenVal">12</span></label>
+<input type="range" id="length" min="4" max="50" value="12">
+</div>
+<label><input type="checkbox" id="upper" checked> Uppercase</label>
+<label><input type="checkbox" id="lower" checked> Lowercase</label>
+<label><input type="checkbox" id="number" checked> Numbers</label>
+<label><input type="checkbox" id="symbol" checked> Symbols</label>
+<br><br>
+<button onclick="generatePassword()">Generate</button>
+<button onclick="copyPassword()">Copy</button>
+<p id="strength"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
